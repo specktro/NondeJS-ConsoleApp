@@ -14,9 +14,13 @@
   "description": "",
   "devDependencies": {
     "@types/node": "^22.12.0",
+    "@types/yargs": "^17.0.33",
     "nodemon": "^3.1.9",
     "rimraf": "^6.0.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
   }
 }
