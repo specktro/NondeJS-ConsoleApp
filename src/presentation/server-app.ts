@@ -11,6 +11,7 @@ interface RunOptions {
 
 export class ServerApp {
     static run({base, limit, showTable, fileName, destination}: RunOptions) {
+        console.log('Server running...')
         const table = new CreateTable()
             .execute({base, limit})
         const wasCreated = new SaveFile()
@@ -21,9 +22,9 @@ export class ServerApp {
         }
 
         if (wasCreated) {
-            console.log('File created')
+            console.log('File created!')
         } else {
-            console.log('File not created')
+            console.log('File not created!')
         }
     }
 }
